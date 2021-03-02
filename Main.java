@@ -8,8 +8,10 @@ public class Main
 {
 	public static void main( String args[] )
 	{
+    
 		String[] wrds = "one two three four five six seven alligator".split(" ");
 		Words test = new Words( wrds );
+    
 		out.println(test);
 		out.println("word with 2 vowels = "+test.countWordsWithXVowels(2));
 		out.println("word with 3 vowels = "+test.countWordsWithXVowels(3));
@@ -24,6 +26,11 @@ public class Main
 		out.println("\n\n");		
 				
 		//add more test cases
+    out.println("word with 6 vowels = "+test.countWordsWithXVowels(6));
+		out.println("word with 7 vowels = "+test.countWordsWithXVowels(7));
+		out.println("word with 8 vowels = "+test.countWordsWithXVowels(8));
+		out.println("word with 9 chars = "+test.countWordsWithXChars(9));
+
 	
 	}
 }
